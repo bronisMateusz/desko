@@ -1,0 +1,9 @@
+{
+  "name": "desko-joomla-template",
+  "version": "1.0.0",
+  "description": "Joomla template for DESKO website",
+  "main": "index.php",
+  "repository": "https://github.com/bronisMateusz/desko",
+  "author": "bronisMateusz",
+  "license": "MIT"
+}
