@@ -65,6 +65,15 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
 
+a{
+    color: #FFFFFF;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
 .navbar{
     background-color: #161616;
 }
@@ -154,6 +163,14 @@ h1,h2,h3,h4,h5,h6{
 
 .form-control:focus{
     background-color: #292929;
+}
+
+.page-footer .nav-item{
+    text-transform: uppercase;
+}
+
+.page-footer{
+    text-align: center;
 }
 
 @media (min-width: 768px){
