@@ -147,7 +147,7 @@ a:hover{
 
 .contact-details{
     height: 480px;
-    background-image: url(/pictures/contact-form-bg.jpg);
+    background-image: url(../pictures/contact-form-bg.jpg);
     background-size: cover;
 }
 

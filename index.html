@@ -1,14 +1,18 @@
+<?php 
+    defined( '_JEXEC' ) or die; include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
+        <jdoc:include type="head" />
         <!--Bootstrap core CSS-->
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="/css/bootstrap.css" rel="stylesheet">
         <!--Custom CSS-->
-        <link href="css/custom.css" rel="stylesheet">
+        <link href="/css/custom.css" rel="stylesheet">
         <!--jQuery-->
-        <script src="js/jquery-3.5.1.js"></script>
+        <script src="/js/jquery-3.5.1.js"></script>
         <!--Bootstrap JavaScript-->
-        <script src="js/bootstrap.js"></script>
+        <script src="/js/bootstrap.js"></script>
     </head>
     <body>
         <body>
@@ -44,7 +48,7 @@
                             <p class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
                         </div>
                         <div class="col-md-6">
-                            <img src="template_preview.png" class="img-fluid">
+                            <img src="/template_preview.png" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -56,7 +60,7 @@
                             <div class="col-12 mb-5 pr-md-0 d-flex flex-column flex-md-row-reverse">
                                 <div class="col-md-7 mt-5 mb-5 pr-md-0">
                                     <span class="offer-index-right">01</span>
-                                    <img src="template_preview.png" class="img-fluid">
+                                    <img src="/template_preview.png" class="img-fluid">
                                 </div>
                                 <div class="col-md-5 col-lg-4 d-flex flex-column justify-content-center">
                                     <h2 class="mb-3">Heading</h2>
@@ -67,7 +71,7 @@
                             <div class="col-12 mb-5 pl-md-0 d-flex flex-column  flex-md-row">
                                 <div class="col-md-7 mt-5 mb-5 pl-md-0">
                                     <span class="offer-index-left">02</span>
-                                    <img src="template_preview.png" class="img-fluid">
+                                    <img src="/template_preview.png" class="img-fluid">
                                 </div>
                                 <div class="col-md-5 col-lg-4 d-flex flex-column justify-content-center">
                                     <h2 class="mb-3">Heading</h2>
@@ -78,7 +82,7 @@
                             <div class="col-12 mb-5 pr-md-0 d-flex flex-column flex-md-row-reverse">
                                 <div class="col-md-7 mt-5 mb-5 pr-md-0">
                                     <span class="offer-index-right">03</span>
-                                    <img src="template_preview.png" class="img-fluid">
+                                    <img src="/template_preview.png" class="img-fluid">
                                 </div>
                                 <div class="col-md-5 col-lg-4 d-flex flex-column justify-content-center">
                                     <h2 class="mb-3">Heading</h2>
@@ -117,35 +121,34 @@
         <footer class="container page-footer">
             <div class="row">
                 <div class="col-12 d-flex flex-column align-items-center">
-                    <a href="/" class="d-flex justify-content-center mb-5">
-                        <img src="/pictures/logodesko.png">
-                    </a>
-                    <ul class="nav justify-content-center mb-5">
-                        <li class="nav-item">
-                          <a class="nav-link" href="/">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Disabled</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Disabled</a>
-                        </li>
-                    </ul>
-                    <p class="mb-4 copyright">Copyright&copy;XXXX Desko - producent trumien</p>
-                    <a href="http://github.com/bronisMateusz" class="mb-4" target="_blank">Design: bronisMateusz | github.com</a>
-                    <a href="https://agnez.pl/" class="pb-5 mb-5" target="_blank">
-                        <img src="/pictures/logoagnezspzoo.png">
-                    </a>
+                    <div class="col-12 d-flex flex-column align-items-center">
+                        <a href="/" class="d-flex justify-content-center mb-5">
+                            <img src="/pictures/logodesko.png">
+                        </a>
+                        <ul class="nav justify-content-center mb-5">
+                            <li class="nav-item">
+                              <a class="nav-link" href="/">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Disabled</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                        <p class="mb-4 copyright">Copyright&copy;XXXX Desko - producent trumien</p>
+                        <a href="http://github.com/bronisMateusz" class="mb-4" target="_blank">Design: bronisMateusz | github.com</a>
+                        <a href="https://agnez.pl/" class="pb-5 mb-5" target="_blank">
+                            <img src="/pictures/logoagnezspzoo.png">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-
             </div>
         </footer>
     </body>

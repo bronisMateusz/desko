@@ -18,9 +18,12 @@
 
 	<files>
 		<folder>css</folder>
+		<folder>fonts</folder>
 		<folder>js</folder>
+		<folder>pictures</folder>
 		<filename>favicon.ico</filename>
 		<filename>index.html</filename>
+		<filename>index.php</filename>
 		<filename>package.json</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
@@ -31,6 +34,7 @@
 	<positions>
 		<position>navbar</position>
 		<position>jumbotron</position>
+		<position>about</position>
 		<position>main</position>
 		<position>contact</position>
 		<position>footer</position>
