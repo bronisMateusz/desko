@@ -74,6 +74,66 @@ a:hover{
     text-decoration: none;
 }
 
+.btn{
+    color:#FFFFFF;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    padding-left:4.5em;
+    position:relative;
+    -webkit-transition:padding .375s ease;
+    transition:padding .375s ease;
+}
+
+.btn:hover{
+    padding-left:5em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn:hover::before{
+    background-size:0 1px;
+    -webkit-transform:translateX(.5em);
+    transform:translateX(.5em);
+}
+
+.btn:hover::after{
+    background-size:100% 1px;
+    -webkit-transform:translateX(.5em);
+    transform:translateX(.5em);
+    -webkit-transition-delay:.2s;
+    transition-delay:.2s;
+}
+
+.btn::after,
+.btn::before{
+    content:'';
+    top:50%;
+    left:0;
+    background-image:-webkit-gradient(linear,left top,right top,from(#FFF9F9),to(#FFF9F9));
+    background-image:linear-gradient(to right,#FFF9F9 0,#FFF9F9 100%);
+    background-repeat:no-repeat;
+    width:60px;
+    height:1px;
+    background-size:100% 1px;
+    position:absolute;
+    -webkit-transition:background .375s ease,
+    -webkit-transform .375s ease;
+    transition:background .375s ease,-webkit-transform .375s ease;
+    transition:background .375s ease,transform .375s ease;
+    transition:background .375s ease,transform .375s ease,-webkit-transform .375s ease;
+}
+
+.btn::after{
+    background-size:0 1px;
+}
+
+.btn::before{
+    background-position:top right;
+}
+
 .navbar{
     background-color: #161616;
 }
@@ -155,10 +215,7 @@ a:hover{
     background-color: #161616;
     border: none;
     border-radius: 0;
-}
-
-.form-control::placeholder{
-    color: #FFFFFF;
+    resize: none;
 }
 
 .form-control:focus{
