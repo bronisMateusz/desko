@@ -96,6 +96,46 @@ h1,h2,h3,h4,h5,h6{
     right: 0;
 }
 
+.offer-index-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(-50px) translateY(-40px);
+    color: #8E8E8E;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.offer-index-right::after{
+    content: "";
+    display: block;
+    width: 50vw;
+    height: 3px;
+    background: #8E8E8E;
+    position: absolute;
+    transform: translateX(-70vw) translateY(-15px);
+}
+
+.offer-index-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(50px) translateY(-40px);
+    color: #8E8E8E;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.offer-index-left::after{
+    content: "";
+    display: block;
+    width: 50vw;
+    height: 3px;
+    background: #8E8E8E;
+    position: absolute;
+    transform: translateX(30vw) translateY(-15px);
+}
+
 .contact-details{
     height: 480px;
     background-image: url(/pictures/contact-form-bg.jpg);
@@ -108,7 +148,7 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 0;
 }
 
-.form-control::placeholder,{
+.form-control::placeholder{
     color: #FFFFFF;
 }
 
