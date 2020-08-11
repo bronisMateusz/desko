@@ -165,44 +165,44 @@ a:hover{
     right: 0;
 }
 
-.offer-index-right{
+.offer-img{
+    position: relative;
+}
+
+.offer-index-right,
+.offer-index-left{
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(-50px) translateY(-40px);
+    top: -7.5%;
     color: #8E8E8E;
     font-size: 3rem;
     font-style: italic;
 }
 
-.offer-index-right::after{
-    content: "";
-    display: block;
-    width: 50vw;
-    height: 3px;
-    background: #8E8E8E;
-    position: absolute;
-    transform: translateX(-70vw) translateY(-15px);
+.offer-index-right{
+    right: 10%;
 }
 
 .offer-index-left{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(50px) translateY(-40px);
-    color: #8E8E8E;
-    font-size: 3rem;
-    font-style: italic;
+    left: 10%;
 }
 
-.offer-index-left::after{
+.offer-index-right::before,
+.offer-index-left::before{
     content: "";
-    display: block;
+    top: 75%;
     width: 50vw;
-    height: 3px;
+    height: 2px;
     background: #8E8E8E;
     position: absolute;
-    transform: translateX(30vw) translateY(-15px);
+    transform: translateY(50%);
+}
+
+.offer-index-right::before{
+    right: 15vw;
+}
+
+.offer-index-left::before{
+    left: 15vw;
 }
 
 .contact-details{
