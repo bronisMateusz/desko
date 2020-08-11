@@ -65,73 +65,90 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
 
-a{
-    color: #FFFFFF;
+.line-link{
+    text-decoration:none;
+    font-style:italic;
+	color:#FFFFFF;
+	display:-webkit-box;
+	display:-ms-flexbox;display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding-left:4.5em;
+	position:relative;
+	-webkit-transition:padding .375s ease;
+	transition:padding .375s ease;
 }
 
-a:hover{
-    color: rgba(255, 255, 255, 0.5);
+
+.line-link::after,
+.line-link::before{
+	background-repeat:no-repeat;
+	left:0;
+	content:'';
+}
+
+.line-link:hover{
     text-decoration: none;
-}
-
-.btn{
-    color:#FFFFFF;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-align:center;
-    -ms-flex-align:center;
-    align-items:center;
-    padding-left:4.5em;
-    position:relative;
-    -webkit-transition:padding .375s ease;
-    transition:padding .375s ease;
-}
-
-.btn:hover{
     padding-left:5em;
-    color: rgba(255, 255, 255, 0.5);
 }
 
-.btn:hover::before{
-    background-size:0 1px;
-    -webkit-transform:translateX(.5em);
-    transform:translateX(.5em);
+.line-link:hover::before{
+	background-size:0 1px;
+	-webkit-transform:translateX(.5em);
+	transform:translateX(.5em);
 }
 
-.btn:hover::after{
-    background-size:100% 1px;
-    -webkit-transform:translateX(.5em);
-    transform:translateX(.5em);
-    -webkit-transition-delay:.2s;
-    transition-delay:.2s;
+.line-link:hover::after{
+	background-size:100% 1px;
+	-webkit-transform:translateX(.5em);
+	transform:translateX(.5em);
+	-webkit-transition-delay:.2s;transition-delay:.2s;
 }
 
-.btn::after,
-.btn::before{
-    content:'';
-    top:50%;
-    left:0;
-    background-image:-webkit-gradient(linear,left top,right top,from(#FFF9F9),to(#FFF9F9));
-    background-image:linear-gradient(to right,#FFF9F9 0,#FFF9F9 100%);
-    background-repeat:no-repeat;
-    width:60px;
+.line-link::after,
+.line-link::before{
+	top:50%;
+	background-image:-webkit-gradient(linear,left top,right top,from(#FFF9F9),to(#FFF9F9));
+	background-image:linear-gradient(to right,#FFF9F9 0,#FFF9F9 100%);
     height:1px;
-    background-size:100% 1px;
-    position:absolute;
-    -webkit-transition:background .375s ease,
-    -webkit-transform .375s ease;
-    transition:background .375s ease,-webkit-transform .375s ease;
-    transition:background .375s ease,transform .375s ease;
-    transition:background .375s ease,transform .375s ease,-webkit-transform .375s ease;
+	width:60px;
+	background-size:100% 1px;
+	position:absolute;
+	-webkit-transition:background .375s ease,-webkit-transform .375s ease;
+	transition:background .375s ease,-webkit-transform .375s ease;
+	transition:background .375s ease,transform .375s ease;
+	transition:background .375s ease,transform .375s ease,-webkit-transform .375s ease;
 }
 
-.btn::after{
-    background-size:0 1px;
+.line-link::after{
+	background-size:0 1px;
 }
 
-.btn::before{
-    background-position:top right;
+.line-link::before{
+	background-position:top right;
+}
+
+.line-link-reverse{
+    padding-right: 4.5em;
+}
+
+.line-link-reverse:hover{
+    text-decoration: none;
+    padding-left: auto;
+    padding-right: 5em;
+}
+
+.line-link-reverse::after,
+.line-link-reverse::before{
+    left: auto;
+	right:0;
+}
+
+.line-link-reverse:hover::before,
+.line-link-reverse:hover::after{
+	-webkit-transform:translateX(-.5em);
+	transform:translateX(-.5em);
 }
 
 .navbar{
@@ -194,6 +211,7 @@ a:hover{
     height: 2px;
     background: #8E8E8E;
     position: absolute;
+    -webkit-transform:translateY(50%);
     transform: translateY(50%);
 }
 
@@ -222,12 +240,23 @@ a:hover{
     background-color: #292929;
 }
 
-.page-footer .nav-item{
-    text-transform: uppercase;
-}
-
 .page-footer{
     text-align: center;
+    background-color: #222222;
+}
+
+.page-footer a{
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.page-footer a:hover{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.page-footer .copy-section{
+    font-size: .7em;
 }
 
 @media (min-width: 768px){
