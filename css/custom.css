@@ -156,7 +156,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .jumbotron{
-    height: 80vh;
+    height: 75vh;
 }
 
 .offer-container,
@@ -225,7 +225,7 @@ h1,h2,h3,h4,h5,h6{
 
 .contact-details{
     height: 480px;
-    background-image: url(../pictures/contact-form-bg.jpg);
+    background-image: url(../pictures/475x475.jpg);
     background-size: cover;
 }
 
@@ -263,5 +263,12 @@ h1,h2,h3,h4,h5,h6{
     .offer-container-bg,
     .contact-container-bg{
         width: 90%;
+    }
+}
+
+@media (min-width: 1200px){
+    .about-img{
+        -webkit-transform:translateY(-15%);
+        transform: translateY(-15%);
     }
 }
