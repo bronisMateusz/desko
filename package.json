@@ -5,5 +5,12 @@
   "main": "index.php",
   "repository": "https://github.com/bronisMateusz/desko",
   "author": "bronisMateusz",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "css": "node-sass scss/custom.scss css/custom.css"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "node-sass": "^4.14.1"
+  }
 }
