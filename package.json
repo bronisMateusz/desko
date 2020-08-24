@@ -7,7 +7,8 @@
   "author": "bronisMateusz",
   "license": "MIT",
   "scripts": {
-    "css": "node-sass scss/custom.scss css/custom.css"
+    "watch-sass": "node-sass scss/custom.scss css/style.css --watch",
+    "compile-sass": "node-sass scss/custom.scss css/custom.css"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",

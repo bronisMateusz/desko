@@ -112,10 +112,6 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
 
-.jumbotron{
-    border-radius: 0;
-}
-
 .img-fluid{
     width: 100%;
 }
@@ -216,6 +212,14 @@ h1,h2,h3,h4,h5,h6{
 
 .jumbotron{
     height: 75vh;
+    border-radius: 0;
+    background-image: url('../pictures/jumbo.jpg');
+    background-size: cover;
+}
+
+.jumbotron .page-title{
+    font-family: 'Fondamento';
+    border-bottom: 2px solid #FFFFFF;
 }
 
 .offer-container,
