@@ -9496,14 +9496,25 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translateX(-0.5em);
   transform: translateX(-0.5em); }
 
-.navbar {
+header {
   background-color: #161616; }
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: none;
+  outline: none;
+  box-shadow: none; }
 
 .jumbotron {
   height: 75vh;
   border-radius: 0;
   background-image: url("../pictures/jumbo.jpg");
   background-size: cover; }
+
+.jumbotron .page-title {
+  font-family: 'Fondamento';
+  border-bottom: 2px solid #FFFFFF; }
 
 .offer-container,
 .contact-container {
