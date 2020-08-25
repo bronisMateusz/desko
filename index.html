@@ -7,10 +7,16 @@
         <jdoc:include type="head" />
         <!--Custom CSS-->
         <link href="/css/custom.css" rel="stylesheet">
+        <!--AOS CSS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--jQuery-->
         <script src="/js/jquery-3.5.1.js"></script>
         <!--Bootstrap JavaScript-->
         <script src="/js/bootstrap.js"></script>
+        <!--AOS JavaScript-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!--Custom JavaScript-->
+        <script src="/js/custom.js"></script>
     </head>
     <body>
         <body>
@@ -63,7 +69,7 @@
                         <h4>free joomla template</h4>
                 </div>
                 <div class="container-fluid container-xxl about-container">
-                    <div class="row mb-5 mb-xl-0">
+                    <div class="row mb-5 mb-xl-0" data-aos="fade-up">
                         <div class="col-md-7 col-lg-8 p-5 align-self-center">
                             <h2>Heading</h2>
                             <br class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.<br/><br/>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</p>
@@ -78,9 +84,9 @@
                     <div class="container-xxxl p-0">
                         <h2 class="mb-5 pl-5">Nasza oferta</h2>
                         <div class="container-fluid">
-                            <div class="row mt-5 mb-5 flex-column flex-md-row-reverse">
+                            <div class="row mt-5 mb-5 flex-column flex-md-row-reverse" data-aos="fade-left">
                                <div class="col-md-7 p-0 offer-img">
-                                    <span class="offer-index-right">01</span>
+                                    <span class="offer-index-right" data-aos="zoom-out">01</span>
                                     <img src="/pictures/800x600.jpg" class="img-fluid">
                                 </div>
                                 <div class="col-md-5 col-lg-4 p-5 d-flex flex-column justify-content-center">
@@ -89,9 +95,9 @@
                                     <a class="line-link text-white" href="#">Sprawdź</a>
                                 </div>
                             </div>
-                            <div class="row mt-5 mb-5 flex-column flex-md-row">
+                            <div class="row mt-5 mb-5 flex-column flex-md-row" data-aos="fade-right">
                                 <div class="col-md-7 p-0 offer-img">
-                                    <span class="offer-index-left">02</span>
+                                    <span class="offer-index-left" data-aos="zoom-out">02</span>
                                     <img src="/pictures/800x600.jpg" class="img-fluid">
                                 </div>
                                 <div class="col-md-5 col-lg-4 p-5 d-flex flex-column justify-content-center align-items-end">
@@ -100,9 +106,9 @@
                                     <a class="line-link line-link-reverse text-white" href="#">Sprawdź</a>
                                 </div>
                             </div>
-                            <div class="row mt-5 flex-column flex-md-row-reverse">
+                            <div class="row mt-5 flex-column flex-md-row-reverse" data-aos="fade-left">
                                 <div class="col-md-7 p-0 offer-img">
-                                    <span class="offer-index-right">03</span>
+                                    <span class="offer-index-right" data-aos="zoom-out">03</span>
                                     <img src="/pictures/800x600.jpg" class="img-fluid">
                                 </div>
                                 <div class="col-md-5 col-lg-4 p-5 d-flex flex-column justify-content-center">
@@ -114,28 +120,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid contact-container pt-md-5 pr-0 pb-md-5 pl-0">
+                <div class="container-fluid contact-container pt-5 pb-5">
                     <div class="contact-container-bg"></div>
                     <div class="container-xxl p-0">
                         <div class="row">
-                            <div class="col-md-5 pr-md-0 pl-md-5">
+                            <div class="col-md-5 pr-5 pl-5 pr-md-0">
                                 <div class="contact-details d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="mb-5">Kontakt</h2>
-                                    <div class="mb-4 d-flex">
-                                        <img src="/pictures/phone.svg">
-                                        <p class="mb-0 ml-3">+48 668 359 908</p>
-                                    </div>
-                                    <div class="mb-4 d-flex">
-                                        <img src="/pictures/mail.svg">
-                                        <p class="mb-0 ml-3">example@example.pl</p>
-                                    </div>
-                                    <div class="mb-4 d-flex">
-                                        <img src="/pictures/location.svg">
-                                        <p class="mb-0 ml-3">ul. Kościuszki 3,<br />42-152 Opatów</p>
+                                    <div class="d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in">
+                                        <h2 class="mb-5">Kontakt</h2>
+                                        <div class="mb-4 d-flex">
+                                            <img src="/pictures/phone.svg">
+                                            <p class="mb-0 ml-3">+48 668 359 908</p>
+                                        </div>
+                                        <div class="mb-4 d-flex">
+                                            <img src="/pictures/mail.svg">
+                                            <p class="mb-0 ml-3">example@example.pl</p>
+                                        </div>
+                                        <div class="mb-4 d-flex">
+                                            <img src="/pictures/location.svg">
+                                            <p class="mb-0 ml-3">ul. Kościuszki 3,<br />42-152 Opatów</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-7 p-5 align-self-center">
+                            <div class="col-md-7 p-5 align-self-center" data-aos="zoom-in">
                                 <form class="m-0" action="#" method="POST">
                                     <input type="text" class="form-control mb-4 p-4 text-white" id="name-9652" name="name" placeholder="Imię i nazwisko" required>
                                     <input type="email" class="form-control mb-4 p-4 text-white" id="email-9652" name="email" placeholder="E-mail" required>

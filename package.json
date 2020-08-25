@@ -11,6 +11,7 @@
     "compile-sass": "node-sass scss/custom.scss css/custom.css"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^4.5.2",
     "node-sass": "^4.14.1"
   }
