@@ -1,0 +1,105 @@
+*{
+    font-family: 'Open Sans';
+}
+
+body{
+    background-color: $gray-darker;
+    color: $white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+.line-link{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1.25em;
+	color: $white;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-left: 3.5em;
+	position: relative;
+	-webkit-transition: padding .375s ease;
+	transition: padding .375s ease;
+}
+
+.line-link::after,
+.line-link::before{
+	background-repeat: no-repeat;
+	left: 0;
+	content: '';
+}
+
+.line-link:hover{
+    text-decoration: none;
+    padding-left: 4em;
+}
+
+.line-link:hover::before{
+	background-size: 0 1px;
+	-webkit-transform: translateX(.5em);
+	transform: translateX(.5em);
+}
+
+.line-link:hover::after{
+	background-size: 100% 1px;
+	-webkit-transform: translateX(.5em);
+	transform: translateX(.5em);
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+.line-link::after,
+.line-link::before{
+	top: 50%;
+	background-image: -webkit-gradient(linear,left top,right top,from($white),to($white));
+	background-image: linear-gradient(to right,$white 0,$white 100%);
+    height: 1px;
+	width: 60px;
+	background-size: 100% 1px;
+	position: absolute;
+	-webkit-transition: background .375s ease,-webkit-transform .375s ease;
+	transition: background .375s ease,-webkit-transform .375s ease;
+	transition: background .375s ease,transform .375s ease;
+	transition: background .375s ease,transform .375s ease,-webkit-transform .375s ease;
+}
+
+.line-link::after{
+	background-size: 0 1px;
+}
+
+.line-link::before{
+	background-position: top right;
+}
+
+.line-link-reverse{
+    padding-right: 3.5em;
+}
+
+.line-link-reverse:hover{
+    text-decoration: none;
+    padding-left: auto;
+    padding-right: 4em;
+}
+
+.line-link-reverse::after,
+.line-link-reverse::before{
+    left: auto;
+	right: 0;
+}
+
+.line-link-reverse:hover::before,
+.line-link-reverse:hover::after{
+	-webkit-transform: translateX(-.5em);
+	transform: translateX(-.5em);
+}
