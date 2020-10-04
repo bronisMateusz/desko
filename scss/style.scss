@@ -20,7 +20,6 @@
             height: 2px;
             width: 30px;
             background-color: white;
-            border-radius: 1px;
             display: block;
             transition: all 0.2s;
         }
@@ -51,6 +50,8 @@
     .language-toggler {
         border: none;
         background: transparent !important;
+        width: 54px;
+        padding: 0.25rem 0.75rem;
         &:hover {
             background: transparent !important;
         }
@@ -59,9 +60,39 @@
         }
         .language-toggler-icon{
             display: block;
+            height: 30px;
+            width: 30px;
+            position: relative;
+            transition: all 0.2s;
+        }
+        .icon-bar {
+            position: absolute;
+            height: 2px;
+            width: 30px;
+            background-color: white;
+            display: block;
+            transition: all 0.2s;
+            top: 50%;
+        }
+        .top-bar {
+            transform: rotate(45deg);
+        }
+        .bottom-bar {
+            transform: rotate(-45deg);
+        }
+        &.collapsed {
+            .language-toggler-icon{
             background-image: url("/pictures/language.svg");
-            height: 28px;
-            width: 28px;
+            }
+            .icon-bar{
+                background-color: transparent;
+            }
+            .top-bar {
+                transform: rotate(0deg);
+            }
+            .bottom-bar {
+                transform: rotate(0deg);
+            }
         }
     }
     .navbar-collapse {

@@ -9491,7 +9491,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 2px;
     width: 30px;
     background-color: white;
-    border-radius: 1px;
     display: block;
     transition: all 0.2s; }
   .navbar .navbar-toggler .top-bar {
@@ -9512,16 +9511,39 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .language-toggler {
   border: none;
-  background: transparent !important; }
+  background: transparent !important;
+  width: 54px;
+  padding: 0.25rem 0.75rem; }
   .navbar .language-toggler:hover {
     background: transparent !important; }
   .navbar .language-toggler:focus {
     outline: none; }
   .navbar .language-toggler .language-toggler-icon {
     display: block;
-    background-image: url("/pictures/language.svg");
-    height: 28px;
-    width: 28px; }
+    height: 30px;
+    width: 30px;
+    position: relative;
+    transition: all 0.2s; }
+  .navbar .language-toggler .icon-bar {
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+    top: 50%; }
+  .navbar .language-toggler .top-bar {
+    transform: rotate(45deg); }
+  .navbar .language-toggler .bottom-bar {
+    transform: rotate(-45deg); }
+  .navbar .language-toggler.collapsed .language-toggler-icon {
+    background-image: url("/pictures/language.svg"); }
+  .navbar .language-toggler.collapsed .icon-bar {
+    background-color: transparent; }
+  .navbar .language-toggler.collapsed .top-bar {
+    transform: rotate(0deg); }
+  .navbar .language-toggler.collapsed .bottom-bar {
+    transform: rotate(0deg); }
 
 .navbar .navbar-collapse {
   position: absolute;
