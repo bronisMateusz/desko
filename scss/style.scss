@@ -186,7 +186,7 @@
         position: relative;
         .offer-index-left{
             position: absolute;
-            top: -7.5%;
+            top: -40px;
             left: 10%;
             color: $gray-light;
             font-size: 3rem;
@@ -199,13 +199,11 @@
                 height: 2px;
                 background: $gray-light;
                 position: absolute;
-                -webkit-transform:translateY(50%);
-                transform: translateY(50%);
             }
         }
         .offer-index-right{
             position: absolute;
-            top: -7.5%;
+            top: -40px;
             right: 10%;
             color: $gray-light;
             font-size: 3rem;
@@ -218,8 +216,6 @@
                 height: 2px;
                 background: $gray-light;
                 position: absolute;
-                -webkit-transform:translateY(50%);
-                transform: translateY(50%);
             }
         }
     }
