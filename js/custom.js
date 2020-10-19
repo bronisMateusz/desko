@@ -5,7 +5,6 @@ AOS.init({
 $(function () {
     $(document).scroll(function () {
       var $nav = $(".navbar.fixed-top");
-      var $jumbo = $(".jumbotron");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $jumbo.height());
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 })

@@ -82,7 +82,7 @@
         }
         &.collapsed {
             .language-toggler-icon{
-            background-image: url("/pictures/language.svg");
+            background-image: url("../pictures/language.svg");
             }
             .icon-bar{
                 background-color: transparent;
@@ -116,6 +116,7 @@
     border-radius: 0;
     background-image: url('../pictures/jumbo.jpg');
     background-size: cover;
+    background-attachment: fixed;
     .page-title{
         font-family: 'Fondamento';
         border-bottom: 2px solid $white;
@@ -234,7 +235,7 @@
     }
     .contact-details{
         height: 600px;
-        background-image: url(../pictures/475x475.jpg);
+        background-image: url(../pictures/contact-bg.jpg);
         background-size: cover;
     }
     .form-control{

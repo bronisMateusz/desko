@@ -9537,7 +9537,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar .language-toggler .bottom-bar {
     transform: rotate(-45deg); }
   .navbar .language-toggler.collapsed .language-toggler-icon {
-    background-image: url("/pictures/language.svg"); }
+    background-image: url("../pictures/language.svg"); }
   .navbar .language-toggler.collapsed .icon-bar {
     background-color: transparent; }
   .navbar .language-toggler.collapsed .top-bar {
@@ -9562,7 +9562,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 75vh;
   border-radius: 0;
   background-image: url("../pictures/jumbo.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .jumbotron .page-title {
     font-family: 'Fondamento';
     border-bottom: 2px solid #fff; }
@@ -9659,7 +9660,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1; }
   .contact .contact-details {
     height: 600px;
-    background-image: url(../pictures/475x475.jpg);
+    background-image: url(../pictures/contact-bg.jpg);
     background-size: cover; }
   .contact .form-control {
     background-color: #161616;
