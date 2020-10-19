@@ -7,6 +7,11 @@
 
 // _ NAVBAR //
 .navbar{
+    .navbar-brand{
+        .logo{
+            height: 40px;
+        }
+    }
     .navbar-toggler {
         border: none;
         background: transparent !important;
@@ -260,6 +265,9 @@
 .page-footer{
     text-align: center;
     background-color: $gray;
+    .logo{
+        height: 40px;
+    }
     a{
         text-transform: uppercase;
         color: $white;
