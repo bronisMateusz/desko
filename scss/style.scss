@@ -7,6 +7,7 @@
 
 // _ NAVBAR //
 .navbar{
+    text-transform: uppercase;
     .navbar-brand{
         .logo{
             height: 40px;
@@ -122,6 +123,7 @@
     background-image: url('../pictures/jumbo.jpg');
     background-size: cover;
     background-attachment: fixed;
+    text-align: center;
     .page-title{
         font-family: 'Fondamento';
         border-bottom: 2px solid $white;
@@ -292,7 +294,7 @@
         }
     }
     .copy-section{
-        font-size: .7em;
+        font-size: .8em;
     }
 }
 

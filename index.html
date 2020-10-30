@@ -5,11 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="" />
         <!--CSS-->
-        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <!--AOS CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--jQuery-->
         <script src="js/jquery-3.5.1.js"></script>
         <!--Bootstrap JavaScript-->
         <script src="js/bootstrap.js"></script>
+        <!--AOS JavaScript-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
         <title>Desko</title>
     </head>
     <body>
@@ -67,14 +71,16 @@
         </header>
         <main role="main">
             <!-- jumbotron -->
-            <div class="jumbotron m-0 d-flex flex-column justify-content-center align-items-center">
-                <h1 class="page-title pr-5 pb-3 pl-5 mb-3">desko</h1>
-                <h4>trumny oraz akcesoria pogrzebowe</h4>
+            <div class="jumbotron m-0 d-flex justify-content-center">
+                <div class="d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in">
+                    <h1 class="page-title pr-5 pb-3 pl-5 mb-3">desko</h1>
+                    <h4>trumny oraz akcesoria pogrzebowe</h4>
+                </div>
             </div>
             <!-- about -->
             <div class="container-fluid about">
                 <div class="container-xxl">
-                    <div class="row mb-5 mb-xl-0">
+                    <div class="row mb-5 mb-xl-0" data-aos="fade-up">
                         <div class="col-md-7 col-lg-8 p-5 align-self-center">
                             <h2>doskonała jakość i wzornictwo</h2>
                             <p>Pragniemy dostarczyć Państwu trumny, które wyróżniać się będą nie tylko jakością, ale także i wzornictwem. Realizujemy Państwa życzenia łącząc tradycyjny rzemieślniczy warsztat oraz najnowsze technologie. Chcąc doskonalić się w każdej ze świadczonych usług, przykładamy szczególną wagę do doboru właściwego personelu naszej firmy. Zapewniamy Państwu wybór trumny wykonanej wyłącznie z wysokogatunkowego drewna litego w korzystnej cenie. Nasi pracownicy podchodzą do swoich obowiązków z pełnym oddaniem i odpowiednim poszanowaniem Państwa uczuć, mając na uwadze trudne chwile, jakie przeżywają bliscy podczas ostatniej drogi zmarłego.</p>
@@ -109,9 +115,9 @@
                         <h2 class="mb-5 pl-5">Nasza oferta</h2>
                     </div>
                     <div class="container-fluid">
-                        <div class="row mt-md-5 mb-5 flex-column flex-md-row-reverse">
+                        <div class="row mt-md-5 mb-5 flex-column flex-md-row-reverse" data-aos="fade-up">
                             <div class="col-md-7 p-0 offer-img">
-                                <span class="offer-index-right">01</span>
+                                <span class="offer-index-right" data-aos="zoom-out">01</span>
                                 <img
                                     class="img-fluid"
                                     sizes="(max-width: 934px) 100vw, 934px"
@@ -132,9 +138,9 @@
                                 <a class="line-link text-white" href="/trumny.html">Zobacz</a>
                             </div>
                         </div>
-                        <div class="row mt-5 mb-5 flex-column flex-md-row">
+                        <div class="row mt-5 mb-5 flex-column flex-md-row" data-aos="fade-up">
                             <div class="col-md-7 p-0 offer-img">
-                                <span class="offer-index-left">02</span>
+                                <span class="offer-index-left" data-aos="zoom-out">02</span>
                                 <img
                                     class="img-fluid"
                                     sizes="(max-width: 934px) 100vw, 934px"
@@ -155,9 +161,9 @@
                                 <a class="line-link line-link-reverse text-white" href="/krzyze.html">Zobacz</a>
                             </div>
                         </div>
-                        <div class="row mt-5 flex-column flex-md-row-reverse">
+                        <div class="row mt-5 flex-column flex-md-row-reverse" data-aos="fade-up">
                             <div class="col-md-7 p-0 offer-img">
-                                <span class="offer-index-right">03</span>
+                                <span class="offer-index-right" data-aos="zoom-out">03</span>
                                 <img
                                     class="img-fluid"
                                     sizes="(max-width: 934px) 100vw, 934px"
@@ -186,7 +192,7 @@
                 <div class="contact-bg"></div>
                 <div class="container-xxl p-0">
                     <div class="row">
-                        <div class="col-md-5 pr-5 pl-5 pr-md-0">
+                        <div class="col-md-5 pr-5 pl-5 pr-md-0" data-aos="fade-right">
                             <div class="contact-details d-flex flex-column justify-content-center align-items-center">
                                 <div class="d-flex flex-column justify-content-center align-items-center">
                                     <h2 class="mb-5">kontakt</h2>
@@ -205,7 +211,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-7 p-5 align-self-center">
+                        <div class="col-md-7 p-5 align-self-center"  data-aos="fade-left">
                             <form class="m-0" action="mailto:desko.biuro@gmail.com" method="POST">
                                 <input type="text" class="form-control mb-4 p-4 text-white" id="name-9652" name="name" placeholder="Imię i nazwisko" required>
                                 <input type="email" class="form-control mb-4 p-4 text-white" id="email-9652" name="email" placeholder="Email" required>
@@ -220,7 +226,7 @@
         <footer class="page-footer">
             <div class="container-xxl p-5">
                 <div class="row pb-5">
-                    <div class="col-12 d-flex flex-column align-items-center">
+                    <div class="col-12 d-flex flex-column align-items-center" data-aos="zoom-in">
                         <a href="/" class="mb-5"><img class="logo" src="pictures/logodesko.png" alt="logo"/></a>
                         <ul class="nav flex-column flex-md-row justify-content-center">
                             <li class="nav-item">
