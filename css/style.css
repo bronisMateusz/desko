@@ -9564,12 +9564,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: background-color 200ms linear; }
 
 .jumbotron {
-  height: 75vh;
+  height: 70vh;
   border-radius: 0;
-  background-image: url("../pictures/jumbo.jpg");
+  background-position-x: center;
   background-size: cover;
   background-attachment: fixed;
-  text-align: center; }
+  text-align: center;
+  transition: all ease-in-out 1s; }
   .jumbotron .page-title {
     font-family: 'Fondamento';
     border-bottom: 2px solid #fff; }

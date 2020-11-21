@@ -118,12 +118,13 @@
 
 // _ JUMBOTRON //
 .jumbotron{
-    height: 75vh;
+    height: 70vh;
     border-radius: 0;
-    background-image: url('../pictures/jumbo.jpg');
+    background-position-x: center;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
+    transition: all ease-in-out 1s;
     .page-title{
         font-family: 'Fondamento';
         border-bottom: 2px solid $white;
@@ -315,5 +316,17 @@
     .about{
         -webkit-transform:translateY(-15%);
         transform: translateY(-15%);
+    }
+}
+
+@media (min-width: 1600px){
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    //width: 100%;
+                }
+            }
+        }
     }
 }
