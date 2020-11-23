@@ -47,7 +47,6 @@ function jumboSlider(){
 }
 window.onload = jumboSlider();
 
-
 //_ AOS //
 AOS.init({
   duration: 1400
