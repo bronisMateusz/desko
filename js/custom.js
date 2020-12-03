@@ -6,7 +6,7 @@ $(function () {
     });
 })
 
-//_ OFFER IMG ZOOMER //
+//_ OFFER IMG ZOOM //
 const productWrapper = document.getElementsByClassName('product-img-wrapper');
 const productImg = document.getElementsByClassName ('product-img');
 
@@ -28,13 +28,13 @@ for(let i=0; i<productWrapper.length; i++){
   })
 }
 
-//_ JUMBOTRON IMAGE CHANGER //
+//_ JUMBOTRON IMAGE CHANGE //
 let jumbotron = document.querySelector('.jumbotron');
 let bgImg = [];
 let bgIndex = 0;
 
-bgImg[0] = "url('pictures/slide1.jpg')";
-bgImg[1] = "url('pictures/slide2.jpg')";
+bgImg[0] = "url('../pictures/slide1.jpg')";
+bgImg[1] = "url('../pictures/slide2.jpg')";
 
 function jumboSlider(){
   if(bgIndex>bgImg.length-1){

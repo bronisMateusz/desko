@@ -24,13 +24,6 @@
         &:focus {
             outline: none;
         }
-        .navbar-toggler-icon{
-            display: block;
-            height: 30px;
-            width: 30px;
-            position: relative;
-            transition: all 0.2s;
-        }
         .icon-bars{
             position: absolute;
             width: 30px;
@@ -46,9 +39,13 @@
                 display: block;
                 transition: all 0.2s;
                 top: 50%;
+                transform: translateY(-50%);
             }
             .top-bar {
                 transform: rotate(45deg);
+            }
+            .middle-bar{
+                background-color: transparent;
             }
             .bottom-bar {
                 transform: rotate(-45deg);
@@ -56,19 +53,28 @@
         }
         
         &.collapsed {
-            .navbar-toggler-icon{
-            background-image: url("../pictures/navbar.svg");
-            }
             .icon-bars{
-                z-index: 0;
-                .icon-bar{
-                    background-color: transparent;
-                }
                 .top-bar {
-                    transform: rotate(0deg);
+                    transform: rotate(0deg) translateY(-11px);
                 }
+
+                .middle-bar{
+                    background-color: $white;
+                }
+
                 .bottom-bar {
-                    transform: rotate(0deg);
+                    transform: rotate(0deg) translateY(9px);
+                }
+                &:hover{
+                    .top-bar{
+                        transform: translateY(0px);
+                    }
+                    .middle-bar{
+                        transform: translateY(0px);
+                    }
+                    .bottom-bar{
+                        transform: translateY(0px);
+                    }
                 }
             }
         }
@@ -89,47 +95,10 @@
             height: 30px;
             width: 30px;
             position: relative;
-            transition: all 0.2s;
-        }
-        .icon-bars{
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            top: 50%;
-            right: 28px;
-            transform: translateY(-50%);
-            z-index: 1;
-            .icon-bar {
-                position: absolute;
-                height: 2px;
-                width: 30px;
-                background-color: $white;
-                display: block;
-                transition: all 0.2s;
-                top: 50%;
-            }
-            .top-bar {
-                transform: rotate(45deg);
-            }
-            .bottom-bar {
-                transform: rotate(-45deg);
-            }
-        }
-        &.collapsed {
-            .language-toggler-icon{
             background-image: url("../pictures/language.svg");
-            }
-            .icon-bars{
-                z-index: 0;
-                .icon-bar{
-                    background-color: transparent;
-                }
-                .top-bar {
-                    transform: rotate(0deg);
-                }
-                .bottom-bar {
-                    transform: rotate(0deg);
-                }
+            &:hover{
+                transform: rotate(90deg);
+                transition: all .2s ease-in-out;
             }
         }
     }
@@ -144,13 +113,14 @@
 }
 .navbar.fixed-top.scrolled {
     background-color: $gray-darker !important;
-    transition: background-color 200ms linear;
+    transition: background-color .2s linear;
 }
 
 // _ JUMBOTRON //
 .jumbotron{
     height: 70vh;
     border-radius: 0;
+    background: url(/pictures/slide1.jpg);
     background-position-x: center;
     background-size: cover;
     background-attachment: fixed;
