@@ -39,6 +39,7 @@
                 display: block;
                 transition: all 0.2s;
                 top: 50%;
+                -webkit-transform:translateY(-50%);
                 transform: translateY(-50%);
             }
             .top-bar {
@@ -67,12 +68,15 @@
                 }
                 &:hover{
                     .top-bar{
+                        -webkit-transform:translateY(0px);
                         transform: translateY(0px);
                     }
                     .middle-bar{
+                        -webkit-transform:translateY(0px);
                         transform: translateY(0px);
                     }
                     .bottom-bar{
+                        -webkit-transform:translateY(0px);
                         transform: translateY(0px);
                     }
                 }
@@ -120,10 +124,9 @@
 .jumbotron{
     height: 70vh;
     border-radius: 0;
-    background: url(/pictures/slide1.jpg);
-    background-position-x: center;
+    background: url(../pictures/slide1.jpg);
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     text-align: center;
     transition: all ease-in-out 1s;
     .page-title{
@@ -239,9 +242,13 @@
         z-index: -1;
     }
     .contact-details{
-        height: 600px;
+        height: 400px;
         background-image: url(../pictures/contact-bg.jpg);
         background-size: cover;
+        a{
+            text-decoration: none;
+            color: $white;
+        }
     }
     .form-control{
         background-color: $gray-darker;
@@ -301,6 +308,14 @@
     }
 }
 
+@media (min-width: 568px){
+    .contact{
+        .contact-details{
+            height: 600px;
+        }
+    }
+}
+
 @media (min-width: 768px){
     .offer{
         .offer-bg{
@@ -310,6 +325,17 @@
     .contact{
         .contact-bg{
             width: 90%;
+        }
+        .contact-details{
+            height: 400px;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .contact{
+        .contact-details{
+            height: 600px;
         }
     }
 }

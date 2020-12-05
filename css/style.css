@@ -9511,6 +9511,7 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
         transition: all 0.2s;
         top: 50%;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%); }
       .navbar .navbar-toggler .icon-bars .top-bar {
         transform: rotate(45deg); }
@@ -9525,10 +9526,13 @@ h1, h2, h3, h4, h5, h6 {
     .navbar .navbar-toggler.collapsed .icon-bars .bottom-bar {
       transform: rotate(0deg) translateY(9px); }
     .navbar .navbar-toggler.collapsed .icon-bars:hover .top-bar {
+      -webkit-transform: translateY(0px);
       transform: translateY(0px); }
     .navbar .navbar-toggler.collapsed .icon-bars:hover .middle-bar {
+      -webkit-transform: translateY(0px);
       transform: translateY(0px); }
     .navbar .navbar-toggler.collapsed .icon-bars:hover .bottom-bar {
+      -webkit-transform: translateY(0px);
       transform: translateY(0px); }
   .navbar .language-toggler {
     border: none;
@@ -9563,10 +9567,9 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron {
   height: 70vh;
   border-radius: 0;
-  background: url(/pictures/slide1.jpg);
-  background-position-x: center;
+  background: url(../pictures/slide1.jpg);
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
   transition: all ease-in-out 1s; }
   .jumbotron .page-title {
@@ -9660,9 +9663,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #1A1A1A;
     z-index: -1; }
   .contact .contact-details {
-    height: 600px;
+    height: 400px;
     background-image: url(../pictures/contact-bg.jpg);
     background-size: cover; }
+    .contact .contact-details a {
+      text-decoration: none;
+      color: #fff; }
   .contact .form-control {
     background-color: #161616;
     border: none;
@@ -9722,11 +9728,21 @@ h1, h2, h3, h4, h5, h6 {
   .page-footer .copy-section {
     font-size: .8em; }
 
+@media (min-width: 568px) {
+  .contact .contact-details {
+    height: 600px; } }
+
 @media (min-width: 768px) {
   .offer .offer-bg {
     width: 90%; }
   .contact .contact-bg {
-    width: 90%; } }
+    width: 90%; }
+  .contact .contact-details {
+    height: 400px; } }
+
+@media (min-width: 992px) {
+  .contact .contact-details {
+    height: 600px; } }
 
 @media (min-width: 1200px) {
   .about {
