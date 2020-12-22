@@ -1,20 +1,21 @@
 {
-    "name": "desko",
-    "version": "1.0.0",
-    "description": "A static website for a funeral company.",
-    "main": "index.html",
-    "repository": "https://github.com/bronisMateusz/desko",
-    "author": "bronisMateusz",
-    "license": "MIT",
-    "scripts": {
-      "watch-sass": "node-sass scss/style.scss css/style.css --watch",
-      "compile-sass": "node-sass scss/style.scss css/style.css"
-    },
-    "dependencies": {
-      "aos": "^2.3.4",
-      "bootstrap": "4.5.3",
-      "firebase-tools": "^8.17.0",
-      "jquery": "^3.5.1",
-      "node-sass": "^4.14.1"
-    }
-}  
+  "name": "desko",
+  "version": "1.0.0",
+  "description": "A static website for a funeral company.",
+  "main": "index.html",
+  "repository": "https://github.com/bronisMateusz/desko",
+  "author": "bronisMateusz",
+  "license": "MIT",
+  "scripts": {
+    "watch-sass": "node-sass scss/style.scss css/style.css --watch",
+    "compile-sass": "node-sass scss/style.scss css/style.css"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "4.5.3",
+    "firebase-tools": "^8.17.0",
+    "jquery": "^3.5.1",
+    "node-forge": "^0.10.0",
+    "node-sass": "^4.14.1"
+  }
+}
